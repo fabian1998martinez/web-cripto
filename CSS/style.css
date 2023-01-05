@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;1,700&family=Roboto:ital,wght@0,100;0,500;0,900;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:600px) {
+    .home{
+        background-image: linear-gradient(rgba(16,16,16,.5), rgba(16,16,16,.5)), url(../imagenes/cripto-fondo.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vh;
+        height: 100vh;
+        background-position: 99%;
+        transition: all 1s;
+        transform: translateX(0%);
+    }
+
+    .home_button{
+        position: absolute;
+        top: 87%;
+        left: 11%;
+        width: 70px;
+    }
+    .button{
+        padding: 10px;
+        width: 220px;
+        cursor: pointer;
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        background-color: #a8740c;
+        border-radius: 50px;
+        font-size: 20px;
+        color: #ffff;
+        font-weight: 100;
+    }
+    .home_toogle{
+        position: absolute;
+        transform: translateX(-100%);
+
+    } 
+     /*----HEADER---*/
+    
+    .header-home{
+        transform: translateX(110%);
+        transition: all 1.5s;
+    }  
+    .header_toogle{
+        transform: translateX(0%);
+        }
+    .img-home{
+        width: 100vw;
+        height: 50vh;
+        background-image:linear-gradient(rgba(16,16,16,.2),rgba(16,16,16,.2)),  url(../imagenes/logo-perrito.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+    }
+
+    header{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color:#0a0a09 ;
+    }
+    header .header-home_title{
+        color: #ffff;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 100;
+        line-height: 1.5em;
+    }
+    .fa-bars{
+        font-size: 4em;
+        position: absolute;
+        top:90%;
+        left: 80%;
+        color: rgb(248, 239, 239);
+        cursor: pointer;
+    }
+    .header_nav{
+        background-color: #a8740c;
+        width: 100vw;
+        height: 85vh;
+        align-items: center;
+        position: absolute;
+        top:50%;
+        transition: all 1.5s;
+        transform: translateX(-110%);
+    }
+
+    .header_menu{
+        width: 100vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0a0a09;
+       
+    }
+    ul li{
+        list-style: none;
+    }
+    li :hover{
+        color: #f096d9;
+    }
+    li a{
+        text-decoration:  none;
+        color: #ffff;
+        font-size: 2em;
+    }
+    .nav_toogle{
+        transform: translateX(0%);
+    }
+
+    /*metaverso-bars*/
+   
+
+}
